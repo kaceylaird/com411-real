@@ -11,3 +11,14 @@ while obstaclesAvoided < obstacleCount:
     print(f"Avoiding done... {obstaclesAvoided} obstacle(s) avoided!")
 
 print("All obstacles avoided!")
+
+barCount = int(input("How many bars should be charged? "))
+barsCharged = 0
+chargingBar = "[ ]"
+
+while barsCharged < barCount:
+    barsCharged += 1
+    chargingBar = "[" + "|" * barsCharged + " " * (barCount - barsCharged) + "]"
+    print(f"Charging {chargingBar} ")
+
+print("The battery is fully charged!")
