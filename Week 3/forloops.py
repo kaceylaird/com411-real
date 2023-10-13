@@ -7,3 +7,5 @@ for count in range(mountains):
     print("    /  ^    \_ ")
     print("  _/ ^ ^     ^\ ")
     print(" /  ^     ^    \ ")
+
+stepsAway = int(input("How many steps away are we from the target?"))
