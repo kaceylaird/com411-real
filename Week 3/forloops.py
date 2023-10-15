@@ -32,3 +32,9 @@ else:
         num_asterisks = brightness // 2
         print("Brightness level:", brightness)
         print("*" * num_asterisks)
+
+    print("Please enter a word")
+    wordSeen = input()
+
+    for index, character in enumerate(wordSeen):
+        print(f"Index {index + 1}: {character}")
