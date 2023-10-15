@@ -16,3 +16,19 @@ for count in range(stepsAway):
     print(f"{stepsAway} steps away.. ")
 
 print("Target Achieved!")
+
+required_brightness = int(input("What level of brightness is required? "))
+
+# Check if the input is even
+if required_brightness % 2 != 0:
+    print("Please enter an even number for brightness.")
+else:
+    # Generate a range of even numbers between 2 and the user's input
+    brightness_range = range(2, required_brightness + 1, 2)
+
+    # Use a for loop to display asterisk symbols to represent the current light level
+    for brightness in brightness_range:
+        # Calculate the number of asterisks to display
+        num_asterisks = brightness // 2
+        print("Brightness level:", brightness)
+        print("*" * num_asterisks)
