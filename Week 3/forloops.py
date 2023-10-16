@@ -51,6 +51,14 @@ for i in range(len(phrase) - 1, -1, -1):
 # Display the reversed phrase
 print("Reversed phrase:", reversed_phrase)
 
+# Prompt the user for input
+phrase = input("What phrase do you want to print? ")
+
+# Use a for loop to print each letter on a separate line
+for letter in phrase:
+    if letter.isalpha():  # Check if the character is a letter (alphabetical)
+        print(letter)
+
 
 
 
