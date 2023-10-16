@@ -38,3 +38,24 @@ else:
 
     for index, character in enumerate(wordSeen):
         print(f"Index {index + 1}: {character}")
+
+phrase = input("What phrase do you want to see in reverse? ")
+
+# Initialize an empty string to store the reversed phrase
+reversed_phrase = ""
+
+# Use a for loop to reverse the input phrase
+for i in range(len(phrase) - 1, -1, -1):
+    reversed_phrase += phrase[i]
+
+# Display the reversed phrase
+print("Reversed phrase:", reversed_phrase)
+
+
+
+
+
+
+
+
+
