@@ -44,3 +44,13 @@ def cross_bridge(distance):
 print("  ")
 cross_bridge(3)
 cross_bridge(6)
+
+def climb_ladder(steps_remaining, steps_crossed):
+    if steps_remaining > steps_crossed:
+        print("Still some way to go!")
+    else:
+        print("We are almost there!")
+
+print("  ")
+climb_ladder(10, 5)
+climb_ladder(5, 10)
