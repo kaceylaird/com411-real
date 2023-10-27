@@ -1,17 +1,14 @@
 def directions():
-    steps = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
-    return steps
+    directions = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
+    return directions
 
 
-def run_task1():
-    # Call the 'directions' function
-    steps = directions()
-
-    for step in steps:
-        print(step)
+def run():
+    print(directions())
 
 
-run_task1()
+if __name__ == "__main__":
+    run()
 
 
 def movements():
@@ -19,30 +16,30 @@ def movements():
     return path
 
 
-def generate_movements():
-    movements = [
-        {"direction": "Forward", "steps": 10},
-        {"direction": "Left", "steps": 5},
-        {"direction": "Right", "steps": 8},
-    ]
-    return movements
-
-
-print(" ")
-
-
-def run_task2():
-    # Display a message
+def run():
     print("Moving...")
-
-    movements = generate_movements()
-
-    # Display the movements in the specified format
-    for move in movements:
-        direction = move["direction"]
-        steps = move["steps"]
-        print(f"{direction} for {steps} steps")
+    path = movements()
+    print(f"{path[0]} for {path[1]} steps")
+    print(f"{path[2]} for {path[3]} steps")
+    print(f"{path[4]} for {path[5]} steps")
+    print(f"{path[6]} for {path[7]} steps")
 
 
-run_task2()
+if __name__ == "__main__":
+    run()
 
+
+def movements():
+    path = ["Move Forward", 10, "Move Backward", 5, "Move Left", 3, "Move Right", 1]
+    return path
+
+
+def run():
+    print("Moving...")
+    path = movements()
+    for index in range(0, len(path), 2):
+        print(f"{path[index]} for {path[index+1]} steps")
+
+
+if __name__ == "__main__":
+    run()
